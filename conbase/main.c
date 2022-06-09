@@ -9,7 +9,7 @@ int main()
     printf("%s", "Enter positive decimal number: ");
     unsigned long long int decimal;
     scanf("%llu", &decimal); 
-    char *binary = DecToHex(decimal);
+    char *binary = DecToBin(decimal);
     if(binary)
     {
         printf("The binary equivalent is \033[1;33m%s\033[0m\n", binary); 
