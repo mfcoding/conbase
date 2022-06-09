@@ -10,17 +10,17 @@ char *DecToHex(unsigned long long int decimal)
         dec_copy /= 16;
         ++count;
     }
-    char *octal = (char*) malloc((count+1) * sizeof(char));
-    if(octal)
+    char *hexadecimal = (char*) malloc((count+1) * sizeof(char));
+    if(hexadecimal)
     {
-        *(octal+count) = '\0';
+        *(hexadecimal+count) = '\0';
         while(count)
         {
             --count;
-            *(octal+count) = (decimal % 16);
-            *(octal+count) += *(octal+count) < 10 ? 48 : 87;
+            *(hexadecimal+count) = (decimal % 16);
+            *(hexadecimal+count) += *(hexadecimal+count) < 10 ? 48 : 87;
             decimal /= 16;
         }
     }
-    return octal;
+    return hexadecimal;
 }
