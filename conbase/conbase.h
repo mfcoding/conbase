@@ -32,9 +32,9 @@ char *OctToBin(const char *octal);
 char *OctToHex(const char *octal);
 
 /* Return a malloc'd string holding the binary equivalent of hexadecimal. */
-char *HexToBin(const char *hexdecimal);
+char *HexToBin(const char *hexadecimal);
 
 /* Return a malloc'd string holding the octal equivalent of hexadecimal. */
-char *HexToOct(const char *hexdecimal);
+char *HexToOct(const char *hexadecimal);
 
 #endif
