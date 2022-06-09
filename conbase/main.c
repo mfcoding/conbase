@@ -20,6 +20,8 @@ int main()
         puts("Memory allocation failed"); 
     } 
     
+    puts("\n");
+    
     //Example
     printf("%s\n", HexToOct("0xff"));
     
