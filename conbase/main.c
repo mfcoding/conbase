@@ -5,7 +5,8 @@
 
 int main()
 {
-    /*printf("%s", "Enter positive decimal number: ");
+    //Example
+    printf("%s", "Enter positive decimal number: ");
     unsigned long long int decimal;
     scanf("%llu", &decimal); 
     char *binary = DecToHex(decimal);
@@ -17,7 +18,10 @@ int main()
     else
     {
         puts("Memory allocation failed"); 
-    } */
+    } 
+    
+    //Example
     printf("%s\n", HexToOct("0xff"));
+    
     return 0;
 }
